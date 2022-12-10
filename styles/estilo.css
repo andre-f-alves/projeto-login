@@ -2,6 +2,54 @@
 
 /* 
     Paleta de cores:
-    Azul: #05D7EB
-    Lilás: #B707F2
+    - Azul: #05D7EB
+    - Lilás: #B707F2
 */
+
+:root {
+    --azul: #05D7EB;
+    --roxo: #B707F2;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--roxo);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    height: 500px;
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 1px #00000044;
+}
+
+section#login > div#imagem {
+    background: var(--roxo) url('../imgs/img-login.jpg') left bottom no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
