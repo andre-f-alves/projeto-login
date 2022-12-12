@@ -71,6 +71,7 @@ div#formulario > p {
 }
 
 form > div.campo {
+    position: relative;
     display: block;
     background-color: var(--roxo);
     height: 40px;
@@ -81,26 +82,32 @@ form > div.campo {
 }
 
 div.campo > span {
+    position: absolute;
+    top: 50%;
     color: white;
     font-size: 2em;
     width: 40px;
+    transform: translateY(-50%);
     padding: 5px;
 }
 
 div.campo > input {
+    position: absolute;
+    top: 50%;
+    left: 40px;
     background-color: var(--azul3);
-    font-size: 1em;
+    font-size: .8em;
     height: 100%;
-    width: calc(100% - 44.4px);
+    width: calc(100% - 40px);
     padding: 4px;
     border: 0px;
     border-radius: 10px;
-    transform: translateY(-12px);
+    outline: none;
+    transform: translateY(-50%);
 }
 
 div.campo > input:focus-within {
     background-color: white;
-    outline: none;
 }
 
 div.campo > label {
